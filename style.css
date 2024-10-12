@@ -1,0 +1,129 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9966, #ff5e62, #00c9ff, #92fe9d); /* Added more vibrant colors */
+    background-size: 300% 300%; /* Make the background large enough to create the effect */
+    animation: gradientAnimation 10s ease infinite; /* Animate the background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Keyframes for the animated gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ff9966;
+}
+
+.balance h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.balance h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #00ff99; /* Balance color */
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.summary div {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.summary p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: black;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5e62;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff9966;
+}
+
+.transactions {
+    margin-top: 40px;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
